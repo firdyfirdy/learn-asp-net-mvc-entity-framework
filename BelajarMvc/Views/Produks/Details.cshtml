@@ -1,0 +1,58 @@
+﻿@model BelajarMvc.Models.Produk
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.txtProductCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.txtProductCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.txtProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.txtProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.decPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.decPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtInserted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtInserted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.intProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

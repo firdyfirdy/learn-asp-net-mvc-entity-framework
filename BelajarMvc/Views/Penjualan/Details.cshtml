@@ -1,0 +1,77 @@
+﻿@model BelajarMvc.Models.Penjualan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Penjualan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.txtCustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.txtCustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produk.txtProductCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produk.txtProductCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produk.txtProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produk.txtProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Produk.decPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produk.decPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtSalesOrder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtSalesOrder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intQty)
+        </dd>
+
+        <dt>
+            <text>Total Price</text>
+        </dt>
+
+        <dd>
+          @{
+              double total_price = Model.intQty * Convert.ToDouble(Model.Produk.decPrice);
+          }
+          <text>@total_price.ToString()</text>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.intSalesOrderId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

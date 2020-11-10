@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BelajarMvc.Models.Penjualan>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.txtCustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Produk.txtProductCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Produk.decPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intQty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dtSalesOrder)
+        </th>
+        <th>
+          <text>Total Price</text>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.txtCustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produk.txtProductCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produk.decPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intQty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dtSalesOrder)
+        </td>
+        <td>
+          @{ 
+              double total_price = item.intQty * Convert.ToDouble(item.Produk.decPrice);
+          }
+            <text>@total_price.ToString()</text>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.intSalesOrderId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.intSalesOrderId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.intSalesOrderId })
+        </td>
+    </tr>
+}
+
+</table>
