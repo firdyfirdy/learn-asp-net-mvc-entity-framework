@@ -7,13 +7,13 @@ namespace BelajarMvc.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class CreateTriggerDecreaseProdukQty : IMigrationMetadata
+    public sealed partial class CreateTableCustomers : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTriggerDecreaseProdukQty));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTableCustomers));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011091238175_CreateTriggerDecreaseProdukQty"; }
+            get { return "202011100041208_CreateTableCustomers"; }
         }
         
         string IMigrationMetadata.Source

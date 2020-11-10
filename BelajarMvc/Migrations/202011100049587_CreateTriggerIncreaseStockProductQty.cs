@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateTriggerIncreaseProdukQty : DbMigration
+    public partial class CreateTriggerIncreaseStockProductQty : DbMigration
     {
         public override void Up()
         {
@@ -21,7 +21,7 @@
                 "   SET dbo.Produks.intQty = dbo.Produks.intQty + @QtyPenjualan WHERE dbo.Produks.intProductId = @IDProduk " +
                 "END ");
         }
-        
+
         public override void Down()
         {
             Sql("DROP TRIGGER tr_IncreaseProdukQty");

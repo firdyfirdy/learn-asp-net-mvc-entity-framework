@@ -135,17 +135,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011050756525_CreateTable.cs" />
-    <Compile Include="Migrations\202011050756525_CreateTable.designer.cs">
-      <DependentUpon>202011050756525_CreateTable.cs</DependentUpon>
+    <Compile Include="Migrations\202011100039365_CreateTableProduks.cs" />
+    <Compile Include="Migrations\202011100039365_CreateTableProduks.designer.cs">
+      <DependentUpon>202011100039365_CreateTableProduks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011091238175_CreateTriggerDecreaseProdukQty.cs" />
-    <Compile Include="Migrations\202011091238175_CreateTriggerDecreaseProdukQty.designer.cs">
-      <DependentUpon>202011091238175_CreateTriggerDecreaseProdukQty.cs</DependentUpon>
+    <Compile Include="Migrations\202011100041208_CreateTableCustomers.cs" />
+    <Compile Include="Migrations\202011100041208_CreateTableCustomers.designer.cs">
+      <DependentUpon>202011100041208_CreateTableCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011092334414_CreateTriggerIncreaseProdukQty.cs" />
-    <Compile Include="Migrations\202011092334414_CreateTriggerIncreaseProdukQty.designer.cs">
-      <DependentUpon>202011092334414_CreateTriggerIncreaseProdukQty.cs</DependentUpon>
+    <Compile Include="Migrations\202011100044468_CreateTablePenjualans.cs" />
+    <Compile Include="Migrations\202011100044468_CreateTablePenjualans.designer.cs">
+      <DependentUpon>202011100044468_CreateTablePenjualans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011100048209_CreateTriggerDecreaseStockProductQty.cs" />
+    <Compile Include="Migrations\202011100048209_CreateTriggerDecreaseStockProductQty.designer.cs">
+      <DependentUpon>202011100048209_CreateTriggerDecreaseStockProductQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011100049587_CreateTriggerIncreaseStockProductQty.cs" />
+    <Compile Include="Migrations\202011100049587_CreateTriggerIncreaseStockProductQty.designer.cs">
+      <DependentUpon>202011100049587_CreateTriggerIncreaseStockProductQty.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -225,14 +233,20 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011050756525_CreateTable.resx">
-      <DependentUpon>202011050756525_CreateTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011100039365_CreateTableProduks.resx">
+      <DependentUpon>202011100039365_CreateTableProduks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011091238175_CreateTriggerDecreaseProdukQty.resx">
-      <DependentUpon>202011091238175_CreateTriggerDecreaseProdukQty.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011100041208_CreateTableCustomers.resx">
+      <DependentUpon>202011100041208_CreateTableCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011092334414_CreateTriggerIncreaseProdukQty.resx">
-      <DependentUpon>202011092334414_CreateTriggerIncreaseProdukQty.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011100044468_CreateTablePenjualans.resx">
+      <DependentUpon>202011100044468_CreateTablePenjualans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011100048209_CreateTriggerDecreaseStockProductQty.resx">
+      <DependentUpon>202011100048209_CreateTriggerDecreaseStockProductQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011100049587_CreateTriggerIncreaseStockProductQty.resx">
+      <DependentUpon>202011100049587_CreateTriggerIncreaseStockProductQty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

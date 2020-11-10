@@ -7,13 +7,13 @@ namespace BelajarMvc.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class CreateTable : IMigrationMetadata
+    public sealed partial class CreateTableProduks : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTableProduks));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011050756525_CreateTable"; }
+            get { return "202011100039365_CreateTableProduks"; }
         }
         
         string IMigrationMetadata.Source

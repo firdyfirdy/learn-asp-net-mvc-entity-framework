@@ -20,6 +20,7 @@
             {
                 new Produk()
                 {
+                    intProductId = 1,
                     decPrice = 30000,
                     dtInserted = DateTime.Now,
                     intQty = 100,
@@ -28,6 +29,7 @@
                 },
                 new Produk()
                 {
+                    intProductId = 2,
                     decPrice = 20000,
                     dtInserted = DateTime.Now,
                     intQty = 100,
@@ -36,6 +38,7 @@
                 },
                 new Produk()
                 {
+                    intProductId = 3,
                     decPrice = 10000,
                     dtInserted = DateTime.Now,
                     intQty = 100,
@@ -48,6 +51,7 @@
             {
                 new Customer()
                 {
+                    intCustomerId = 1,
                     bitGender = true,
                     dtInserted = DateTime.Now,
                     dtmBirthDate = DateTime.Now,
@@ -56,6 +60,7 @@
                 },
                 new Customer()
                 {
+                    intCustomerId = 2,
                     bitGender = true,
                     dtInserted = DateTime.Now,
                     dtmBirthDate = DateTime.Now,
@@ -64,6 +69,7 @@
                 },
                 new Customer()
                 {
+                    intCustomerId = 3,
                     bitGender = true,
                     dtInserted = DateTime.Now,
                     dtmBirthDate = DateTime.Now,
@@ -72,13 +78,13 @@
                 },
             };
 
-            //produks.ForEach(
-            //    p => context.Produk.AddOrUpdate(p)
-            //);
+            produks.ForEach(
+                p => context.Produk.AddOrUpdate(p)
+            );
 
-            //customers.ForEach(
-            //    c => context.Customer.AddOrUpdate(c)
-            //);
+            customers.ForEach(
+                c => context.Customer.AddOrUpdate(c)
+            );
         }
     }
 }
